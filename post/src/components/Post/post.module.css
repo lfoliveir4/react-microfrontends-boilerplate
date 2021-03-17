@@ -1,0 +1,55 @@
+.container {
+  display: flex;  
+  flex-direction: column;
+  max-width: 750px;
+  flex-wrap: wrap;
+}
+
+.containerPost {
+  width: 100%;
+  margin-left: 20px;
+  margin-right: 20px;
+  border: 1px solid #eee;
+  margin-bottom: 20px;
+}
+
+.postHeaderContainer {
+  display: flex;
+  align-items: center;
+  padding: 20px 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.postImage {
+  width: 750px;
+  height: 750px;
+}
+
+.postHeaderImage {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+
+.postHeaderNickname {
+  margin-left: 20px;
+}
+
+.postFooterContainer {
+  padding: 30px 20px;
+  display: flex;
+  align-items: center;
+  border-top: 1px solid #eee;
+}
+
+.postFooterNickName {
+  font-size: 16px;
+}
+
+.postFooterStatus {
+  margin-left: 30px;
+
+}
+
+
+
