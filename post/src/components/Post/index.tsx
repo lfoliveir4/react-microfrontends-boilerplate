@@ -15,7 +15,7 @@ export default function Post(): ReactElement {
   return (
     <div className={styles.container}>
       {posts.map((post: Post) => (
-        <div className={styles.containerPost}>
+        <div key={post.name} className={styles.containerPost}>
           <div className={styles.postHeaderContainer}>
             <img
               className={styles.postHeaderImage}
@@ -27,7 +27,11 @@ export default function Post(): ReactElement {
           </div>
 
           <div className={styles.containerImagePost}>
-            <img className={styles.postImage} src={post.photo} alt="" />
+            <img
+              className={styles.postImage}
+              src={post.photo}
+              alt={post.name}
+            />
           </div>
 
           <div className={styles.postFooterContainer}>
