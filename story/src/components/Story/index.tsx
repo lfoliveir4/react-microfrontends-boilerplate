@@ -13,7 +13,7 @@ export default function Story(): ReactElement {
   return (
     <div className={styles.container}>
       {storys.map((s: Story) => (
-        <div className={styles.containerAvatar}>
+        <div key={s.name} className={styles.containerAvatar}>
           <div className={styles.containerImageAvatar}>
             <img className={styles.avatar} src={s.avatar} alt={s.name} />
           </div>
