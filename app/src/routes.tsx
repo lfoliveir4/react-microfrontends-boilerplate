@@ -1,4 +1,4 @@
-import { ReactElement, Suspense, lazy } from "react";
+import { ReactElement, Suspense } from "react";
 import { Switch, Route } from "react-router-dom";
 
 import Feed from "./pages/Feed";
